@@ -214,11 +214,16 @@ ol li {
 }
 
 dl dt {
+  float: left;
+  clear: left;
+  width: 50%;
+  text-align: left;
   font-weight: bold;
 }
 
 dl dd {
-  padding-left: 20px;
+  margin: 0;
+  padding: 0;
   font-style: italic;
 }
 
@@ -305,6 +310,12 @@ Full-Width Styles
   padding: 50px 10px 30px 10px;
 }
 
+#mugshot {
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  right: 20px;
+}
 #project_title {
   margin: 0;
   color: #fff;
@@ -358,6 +369,18 @@ Full-Width Styles
 
 .tar_download_link:hover {
   background: url(../images/sprite_download.png) no-repeat top right;
+}
+
+#contact {
+  margin: 0;
+  color: #999;
+  width: 200px;
+}
+#contact dd {
+  width: 300px;
+}
+#contact dt {
+  width: 55px;
 }
 
 #main_content_wrap {

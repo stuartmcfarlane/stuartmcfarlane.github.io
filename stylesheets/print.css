@@ -1,0 +1,10 @@
+#downloads, footer {
+	display: none;
+}
+.inner {
+	width: 900px;
+
+}
+#skills, #experience {
+	page-break-before: always;
+}
