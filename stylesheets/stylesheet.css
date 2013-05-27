@@ -397,7 +397,13 @@ Full-Width Styles
   background: #212121;
 }
 
+.company, .school {
+  font-weight: bold;
+}
 
+.subtitle, .company, .school, .timespan, .location {
+  display: block;
+}
 
 /*******************************************************************************
 Small Device Styles

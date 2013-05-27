@@ -1,3 +1,17 @@
+#header_wrap {
+	background: #fff;
+}
+#project_title, #project_tagline {
+	color: #222;
+	text-shadow: none;
+}
+img {
+	box-shadow: none;
+}
+#main_content_wrap {
+	border-top: 1px solid #aaa;
+	background: #fff;
+}
 #downloads, footer {
 	display: none;
 }
