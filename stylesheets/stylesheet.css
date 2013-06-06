@@ -376,6 +376,10 @@ Full-Width Styles
   color: #999;
   width: 200px;
 }
+#contact a {
+  color: inherit;
+  text-decoration: underline;
+}
 #contact dd {
   width: 300px;
 }
@@ -401,7 +405,7 @@ Full-Width Styles
   font-weight: bold;
 }
 
-.subtitle, .company, .school, .timespan, .location {
+.company, .school, .timespan, .location {
   display: block;
 }
 
