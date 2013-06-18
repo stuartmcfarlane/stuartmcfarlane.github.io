@@ -381,6 +381,7 @@ Full-Width Styles
   text-decoration: underline;
 }
 #contact dd {
+  margin-left: 60px;
   width: 300px;
 }
 #contact dt {
