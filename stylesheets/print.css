@@ -22,3 +22,9 @@ img {
 #skills, #experience {
 	page-break-before: always;
 }
+.print {
+	display:inherit;
+}
+.noprint {
+	display:none;
+}

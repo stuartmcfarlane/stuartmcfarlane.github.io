@@ -463,3 +463,9 @@ Small Device Styles
   }
 
 }
+.print {
+  display:none;
+}
+ul.skills li {
+  list-style-image: url(/images/black-tick.gif);
+}
