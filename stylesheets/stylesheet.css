@@ -315,6 +315,7 @@ Full-Width Styles
   width: 180px;
   float: right;
   margin: 10px 10px 10px 20px;
+  object-fit: cover;
 }
 #project_title {
   margin: 0;
@@ -402,12 +403,19 @@ Full-Width Styles
   background: #212121;
 }
 
-.company, .school {
+.company, .school, .clients, .client-name {
   font-weight: bold;
 }
 
-.company, .school, .timespan, .location {
+.company, .school, .timespan, .location, .clients, .client-name {
   display: block;
+}
+
+.client {
+  margin-top: 1em;
+}
+.client {
+  margin-left: 2em;
 }
 
 /*******************************************************************************
@@ -468,4 +476,10 @@ Small Device Styles
 }
 ul.skills li {
   list-style-image: url(/images/black-tick.gif);
+}
+
+@media print {
+  .noprint {
+    display: none;
+  }
 }
