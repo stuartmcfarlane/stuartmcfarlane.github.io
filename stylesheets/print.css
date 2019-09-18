@@ -19,9 +19,10 @@ img {
 	width: 900px;
 
 }
-#skills, #experience {
+#education {
 	page-break-before: always;
 }
+
 .print {
 	display:inherit;
 }
