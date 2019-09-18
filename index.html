@@ -46,8 +46,12 @@
       <section id="about">
         <h2>About me</h2>
         <p>Seasoned programmer with a wide range of engineering and development experience.</p>
+        <p> I love Javascript and particularly node js.</p>
         <p>
-          For the last few years I've been making web apps with TYPO3, PHP, node.js, mySql, mongo and couchdb. I'm skilled in back end development (system engineering, tool selection, scalable deployment topologies, MVC applications, REST api development) and front end development (HTML/CSS, interaction layer, one page apps, native JS, jQuery, AngularJS).
+          I am very experienced in Javascript development, I've been at it for a decade and a half now. I have transitioned from the initial horror that comes from thinking Javascript is some sort of Java to the elation of discovering that it is really some type of Lisp. In the frontend I've used jQuery, straight JS, Angular and React. In the backend I've written node servers for many projects, the most significant being the <a href="#booking">white label I made for Booking.com</a>. I'll write cli tools using Javascript. I even start up a node REPL when I want to analyze data.
+        </p>
+        <p>
+          After the job with Booking.com my attention was diverted to matters in my personal life that prevented me from accepting any work requiring more than a few days per week. To keep the fires burning I did a lots of freelance jobs for <a href="https://www.netklaar.nl/">NetKlaar</a>. The more interresting were the reimplementation of an eComerce site <a href="#dps">DPS BV</a> and a greefield project <a href="#keeper">keeperstrainer.com</a>. These projects were implemented in NetKlaar's in house stack, namely PHP, mySQL and TYPO3 CMS.
         </p>
         <p>
           In the past I've written device drivers, communication protocol drivers, security implementations, financial service application development, note and coin handling applications, middleware and realtime software.
@@ -68,12 +72,12 @@
           <h3>Personal projects</h3>
           <div class="position">
             <h3>24uzr</h3>
-            <p>My pet personal project is a race planner for the 24 hour sailing race. This annual race has a unique format wherebij you must sail as far as you can in a 24 hour time period along a selection of possible legs. It is an interesting strategic puzzle and a fascinating mathematical puzzle at the same time.</p>
+            <p>My pet personal project is a race planner for the 24 hour sailing race. This annual race has a unique format wherebij you must sail as far as you can in a 24 hour time period along a selection of possible legs. It is an interesting strategic puzzle and a fabulous mathematical puzzle at the same time.</p>
             <p>Whenever I need to learn a new programming language or framework I always look to this puzzle to provide the content of my autodidactic endeavour.</p>
             <p>Mathematically speaking it is a graph search/pathfinding problem maximizing distance sailed and minimizing the delta to 24 hours. Exhaustive search becomes intractable on a single machine long before the 24 hours is reached so finding an optimal search algorithm is neccessary.</p>
             <p>Besides the mathematical puzzle it is also good puzzle for application development. The application is multiple clients have realtime analysis of their progress and a selection of optimal solutions given their actual progress. This requires a application client, backend services to collate and provide neccessary information such as wind predictions and a routing service to do the pathfinding.</p>
             <p>I've built this once before using Angular in the client, node.js in the backend and with a routing service written node.js with the actual graph routines implemented in cpp. Unfortunately this is not currently hosted so I can't show it to you.</p>
-            <p>The current instance of this project is planned to use react in the client, node.js for the backend and the routing service written in Go.</p>
+            <p>The current instance of this project is progressing nicely and uses react in the client, node.js for the backend and the routing service written in Go.</p>
 
             <ul class="skills">
               <li>Javascript</li>
@@ -105,14 +109,14 @@
             <div class="portfolio">
               <span class="clients">Clients</span>
 
-              <div class="client">
+              <div id="dps" class="client">
                 <span class="client-name">Wholesale eCommerce website DPS</span>
                 <a target="_blank" href="https://dpsbv.com">https://dpsbv.com</a>
                 <p>Completely rewrote the front and backend of this succussful
                   B2B eCommerce site. Implemented a REST API that is consumed by
                   the site itself and a mobile application to maintain orders.</p>
               </div>
-              <div class="client">
+              <div id="keeper" class="client">
                 <span class="client-name">Keeperstrainer</span>
                 <a target="_blank" href="https://www.keeperstrainer.com/">https://www.keeperstrainer.com/</a>
                 <p>Creating new online portal for football keeper trainers. Initially conceived as a library of exercises grouped as trainings and sold in a subscription. It is growing into a comprehensive training program management tool with social media inspired features.</p>
@@ -123,7 +127,7 @@
             </div>
           </div>
           <div class="position">
-            <h3 class="title">Full stack engineer, lead developer</h3>
+            <h3 id="booking" class="title">Full stack engineer, lead developer</h3>
             <span class="company">Booking.com</span>
             <span class="timespan">2013 – 2017</span>
             <span class="location">Amsterdam</span>
@@ -270,7 +274,7 @@
         <section id="personal">
           <h2>Sailing</h2>
           <p>I am a keen sailor. I have my own sailboat which means I am also a keen handyman. When I'm not painting her, building a new rudder because the old one broke or monkeying about with the motor because it wont start then I'm usually out sailing.</p>
-          <p>I also like to race. Every week on Wednesday evening during the clement months you'll find me on the foredeck of a 10 meter racing yacht hoisting spinakers, skirting gibs and counting down boat lengths to the start line.</p>
+          <p>I also like to race. Every week on Wednesday evening during the clement months you'll find me on the foredeck of a 10 meter racing yacht hoisting and gibing spinakers, skirting gibs and counting down boat lengths to the start line.</p>
         </section>
 
         <section id="skills">
@@ -336,5 +340,5 @@
       </footer>
     </div>
   </body>
-  <script src="javascripts/main.js"></script>
+  <script src="Javascripts/main.js"></script>
   </html>
