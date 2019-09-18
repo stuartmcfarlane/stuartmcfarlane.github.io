@@ -9,6 +9,9 @@
   <link rel="stylesheet" type="text/css" media="screen,print" href="stylesheets/stylesheet.css">
   <link rel="stylesheet" type="text/css" media="print" href="stylesheets/print.css">
 
+  <link rel="icon" href="https://nodejs.org/static/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="https://nodejs.org/static/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+
   <title>Stuart McFarlane</title>
 </head>
 
@@ -43,8 +46,12 @@
       <section id="about">
         <h2>About me</h2>
         <p>Seasoned programmer with a wide range of engineering and development experience.</p>
-        <p>For the last few years I've been making web apps with TYPO3, PHP, node.js, mySql, mongo and couchdb. I'm skilled in back end development (system engineering, tool selection, scalable deployment topologies, MVC applications, REST api development) and front end development (HTML/CSS, interaction layer, one page apps, native JS, jQuery, AngularJS).</p>
-        <p>In the past I've written device drivers, communication protocol drivers, security implementations, financial service application development, note and coin handling applications, middleware and realtime software.</p>
+        <p>
+          For the last few years I've been making web apps with TYPO3, PHP, node.js, mySql, mongo and couchdb. I'm skilled in back end development (system engineering, tool selection, scalable deployment topologies, MVC applications, REST api development) and front end development (HTML/CSS, interaction layer, one page apps, native JS, jQuery, AngularJS).
+        </p>
+        <p>
+          In the past I've written device drivers, communication protocol drivers, security implementations, financial service application development, note and coin handling applications, middleware and realtime software.
+        </p>
       </section>
 
       <section id="education">
@@ -57,6 +64,29 @@
 
         <section id="experience">
           <h2>Experience</h2>
+        <section id="personal_projects">
+          <h3>Personal projects</h3>
+          <div class="position">
+            <h3>24uzr</h3>
+            <p>My pet personal project is a race planner for the 24 hour sailing race. This annual race has a unique format wherebij you must sail as far as you can in a 24 hour time period along a selection of possible legs. It is an interesting strategic puzzle and a fascinating mathematical puzzle at the same time.</p>
+            <p>Whenever I need to learn a new programming language or framework I always look to this puzzle to provide the content of my autodidactic endeavour.</p>
+            <p>Mathematically speaking it is a graph search/pathfinding problem maximizing distance sailed and minimizing the delta to 24 hours. Exhaustive search becomes intractable on a single machine long before the 24 hours is reached so finding an optimal search algorithm is neccessary.</p>
+            <p>Besides the mathematical puzzle it is also good puzzle for application development. The application is multiple clients have realtime analysis of their progress and a selection of optimal solutions given their actual progress. This requires a application client, backend services to collate and provide neccessary information such as wind predictions and a routing service to do the pathfinding.</p>
+            <p>I've built this once before using Angular in the client, node.js in the backend and with a routing service written node.js with the actual graph routines implemented in cpp. Unfortunately this is not currently hosted so I can't show it to you.</p>
+            <p>The current instance of this project is planned to use react in the client, node.js for the backend and the routing service written in Go.</p>
+
+            <ul class="skills">
+              <li>Javascript</li>
+              <li>node.js <a href="https://github.com/stuartmcfarlane/24uzr-rest-api" target="_blank">git repo</a></li>
+              <li>React <a href="https://github.com/stuartmcfarlane/24uzr-react-client" target="_blank">git repo</a></li>
+              <li>Go <a href="https://github.com/stuartmcfarlane/24uzr-route-server" target="_blank">git repo</a></li>
+              <li>REST API</li>
+              <li>git</li>
+            </ul>
+
+          </div>
+        </section>
+
           <div class="position">
             <h3 class="title">Freelance developer</h3>
             <span class="company">Stuart McFarlane Software</span>
@@ -234,20 +264,6 @@
             <span class="timespan">2002 – 2005</span>
             <span class="location"></span>
             <p>Developed middleware on win32 for banks' backend and office applications.</p>
-          </div>
-        </section>
-
-        <section id="personal_projects">
-          <h1>Personal projects</h1>
-          <div class="position">
-            <h3>24uzr</h3>
-            <p>My pet personal project is a race planner for the 24 hour sailing race. This annual race has a unique format wherebij you must sail as far as you can in a 24 hour time period along a selection of possible legs. It is an interesting strategic puzzle and a fascinating mathematical puzzle at the same time.</p>
-            <p>Whenever I need to learn a new programming language or framework I always look to this puzzle to provide the content of my autodidactic endeavour.</p>
-            <p>Mathematically speaking it is a graph search/pathfinding problem maximizing distance sailed and minimizing the delta to 24 hours. Exhaustive search becomes intractable on a single machine long before the 24 hours is reached so finding an optimal search algorithm is neccessary.</p>
-            <p>Besides the mathematical puzzle it is also good puzzle for application development. The application is multiple clients have realtime analysis of their progress and a selection of optimal solutions given their actual progress. This requires a application client, backend services to collate and provide neccessary information such as wind predictions and a routing service to do the pathfinding.</p>
-            <p>I've built this once before using Angular in the client, node.js in the backend and with a routing service written node.js with the actual graph routines implemented in cpp. Unfortunately this is not currently hosted so I can't show it to you.</p>
-            <p>The current instance of this project is planned to use react in the client, node.js for the backend and the routing service written in Go.</p>
-  
           </div>
         </section>
 
