@@ -31,8 +31,9 @@
           <dt>email</dt>
           <dd><a href="mailto:stuart@mcfarlane.nl">stuart@mcfarlane.nl</a></dd>
           <dt>office</dt>
-          <dd>Johan Huizingalaan 227</dd>
-          <dd>1066 VX, Amsterdam</dd>
+          <dd>de Breeck 17</dd>
+          <dd>1151 BN</dd>
+          <dd>Broek in Waterland</dd>
           <dt class="print">www</dt>
           <dd class="print">http://stuartmcfarlane.github.io</dd>
         </dl>
@@ -45,16 +46,20 @@
     <section id="main_content" class="inner">
       <section id="about">
         <h2>About me</h2>
-        <p>Seasoned programmer with a wide range of engineering and development experience.</p>
-        <p> I love Javascript and particularly node js.</p>
         <p>
-          I am very experienced in Javascript development, I've been at it for a decade and a half now. I have transitioned from the initial horror that comes from thinking Javascript is some sort of Java to the elation of discovering that it is really some type of Lisp. In the frontend I've used jQuery, straight JS, Angular and React. In the backend I've written node servers for many projects, the most significant being the <a href="#booking">white label I made for Booking.com</a>. I'll write cli tools using Javascript. I even start up a node REPL when I want to analyze data.
+          I am a seasoned programmer with a wide range of engineering and development experience currently specialising in React/node.js
+          applications.
         </p>
+
         <p>
-          After the job with Booking.com my attention was diverted to matters in my personal life that prevented me from accepting any work requiring more than a few days per week. To keep the fires burning I did a lots of freelance jobs for <a href="https://www.netklaar.nl/">NetKlaar</a>. The more interresting were the reimplementation of an eCommerce site <a href="#dps">DPS BV</a> and a greenfield project <a href="#keeper">keeperstrainer.com</a>. These projects were implemented in NetKlaar's in house stack, namely PHP, mySQL and TYPO3 CMS.
+          For the last few years I've been building graphical applications running in the browser. Typically using React and 
+          rendering to SVG. The most satisfying of these applications is a small CAD-like tool for drawing kitchens. Lots of fun
+          maths and algorithms for doing things like analysys on combined shapes.
         </p>
+
         <p>
-          In the past I've written device drivers, communication protocol drivers, security implementations, financial service application development, note and coin handling applications, middleware and realtime software.
+          In the past I've written device drivers, communication protocol drivers, security implementations, financial service application
+          development, note and coin handling applications, middleware and realtime software.
         </p>
       </section>
 
@@ -68,28 +73,29 @@
 
         <section id="experience">
           <h2>Experience</h2>
-        <section id="personal_projects">
-          <h3>Personal projects</h3>
-          <div class="position">
-            <h4>24uzr</h4>
-            <p>My pet personal project is a race planner for the 24 hour sailing race. This annual race has a unique format wherebij you must sail as far as you can in a 24 hour time period along a selection of possible legs. It is an interesting strategic puzzle and a fabulous mathematical puzzle at the same time.</p>
-            <p>Whenever I need to learn a new programming language or framework I always look to this puzzle to provide the content of my autodidactic endeavour.</p>
-            <p>Mathematically speaking it is a graph search/pathfinding problem maximizing distance sailed and minimizing the delta to 24 hours. Exhaustive search becomes intractable on a single machine long before the 24 hours is reached so finding an optimal search algorithm is neccessary.</p>
-            <p>Besides the mathematical puzzle it is also good puzzle for application development. The application is multiple clients have realtime analysis of their progress and a selection of optimal solutions given their actual progress. This requires a application client, backend services to collate and provide neccessary information such as wind predictions and a routing service to do the pathfinding.</p>
-            <p>I've built this once before using Angular in the client, node.js in the backend and with a routing service written node.js with the actual graph routines implemented in C++. Unfortunately this is not currently hosted so I can't show it to you.</p>
-            <p>The current instance of this project is progressing nicely and uses react in the client, node.js for the backend and the routing service written in Go.</p>
 
-            <ul class="skills">
-              <li>Javascript</li>
-              <li>node.js <a href="https://github.com/stuartmcfarlane/24uzr-rest-api" target="_blank">git repo</a></li>
-              <li>React <a href="https://github.com/stuartmcfarlane/24uzr-react-client" target="_blank">git repo</a></li>
-              <li>Go <a href="https://github.com/stuartmcfarlane/24uzr-route-server" target="_blank">git repo</a></li>
-              <li>REST API</li>
-              <li>git</li>
-            </ul>
+        <div class="position">
+          <h3 id="kitchentops" class="title">Full stack developer</h3>
+          <span class="company">caressikitchentops.nl</span>
+          <span class="timespan">2021 - 2024</span>
+          <span class="location">Amsterdam</span>
+          <p>Kitchentops is 2D drawing web application I wrote providing a tool for
+            in house users and B2B customers to graphically design and order
+            kitchen surfaces and accessories. Cutting diagrams and DXF files for CNC machines
+            are produced to facilitate production.
+          </p>
+          <p>The system is implemented as a REST API built on fastify in node.js with a react frontend.</p>
+          <p>The graphical frontend's 2D drawing function is implemented by rendering to SVG.</p>
 
-          </div>
-        </section>
+          <ul class="skills">
+            <li>React</li>
+            <li>node.js</li>
+            <li>fastify</li>
+            <li>My SQL</li>
+            <li>SVG</li>
+            <li>2D graphics</li>
+          </ul>
+        </div>
 
         <div class="position">
           <h3 id="reclamefolder" class="title">Full stack developer</h3>
@@ -115,7 +121,7 @@
             <li>Google cloud</li>
             <li>Docker</li>
             <li>Kubernetes</li>
-        </ul>
+          </ul>
         </div>
         <div class="position">
             <h3 class="title">Freelance developer</h3>
@@ -195,7 +201,7 @@
           <div class="position">
             <h3 class="title">Senior Application Developer, freelance</h3>
             <span class="company">BKWI</span>
-            <span class="timespan">2011 – 2013</span>
+            <span class="timespan">2011 - 2013</span>
             <span class="location">Utrecht, Netherlands</span>
             <p>In 2011 I started a long contract for the Bureau Ketenontwikkeling Werk en Income (BKWI) where I lobbied for and implemented a professionalisation of their web development department. Specifically, I got them using version control (GIT) and continuous integration (ANT, Jenkins).</p>
             <p>I was initially employed in a team of four developers to implement <a target="_blank" href="https://www.naleving.net/">www.naleving.net</a> which is a community site with features like communities (where general posts can be gathered together for interest groups) and the ability to follow other users. It’s all built from GIT with versioned DB update scripts for a reproducible deployment to the test, acceptance or production server. Naleving was a large project spanning six months. It was built on pi_base and ###TEMPLATES### with a lot of typoscript. This left us with strong motivation to move on to ExtBase development.</p>
@@ -297,6 +303,28 @@
           </div>
         </section>
 
+        <section id="personal_projects">
+          <h3>Personal projects</h3>
+          <div class="position">
+            <h4>24uzr</h4>
+            <p>My pet personal project is a race planner for the 24 hour sailing race. This annual race has a unique format wherebij you must sail as far as you can in a 24 hour time period along a selection of possible legs. It is an interesting strategic puzzle and a fabulous mathematical puzzle at the same time.</p>
+            <p>Whenever I need to learn a new programming language or framework I always look to this puzzle to provide the content of my autodidactic endeavour.</p>
+            <p>Mathematically speaking it is a graph search/pathfinding problem maximizing distance sailed and minimizing the delta to 24 hours. Exhaustive search becomes intractable on a single machine long before the 24 hours is reached so finding an optimal search algorithm is neccessary.</p>
+            <p>Besides the mathematical puzzle it is also good puzzle for application development. The application is multiple clients have realtime analysis of their progress and a selection of optimal solutions given their actual progress. This requires a application client, backend services to collate and provide neccessary information such as wind predictions and a routing service to do the pathfinding.</p>
+            <p>I've built this once before using Angular in the client, node.js in the backend and with a routing service written node.js with the actual graph routines implemented in C++. Unfortunately this is not currently hosted so I can't show it to you.</p>
+            <p>The current instance of this project is progressing nicely and uses react in the client, node.js for the backend and the routing service written in Go.</p>
+
+            <ul class="skills">
+              <li>Javascript</li>
+              <li>node.js <a href="https://github.com/stuartmcfarlane/24uzr-rest-api" target="_blank">git repo</a></li>
+              <li>React <a href="https://github.com/stuartmcfarlane/24uzr-react-client" target="_blank">git repo</a></li>
+              <li>Go <a href="https://github.com/stuartmcfarlane/24uzr-route-server" target="_blank">git repo</a></li>
+              <li>REST API</li>
+              <li>git</li>
+            </ul>
+
+          </div>
+        </section>
         <section id="personal">
           <h2>Sailing</h2>
           <p>I am a keen sailor. I have my own sailboat which means I am also a keen handyman. When I'm not painting her, building a new rudder because the old one broke or monkeying about with the motor because it wont start then I'm usually out sailing.</p>
